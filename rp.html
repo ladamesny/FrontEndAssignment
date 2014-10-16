@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Front End Web Development Assignment</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link type ="text/css"rel="stylesheet" href="frontend.css">
+    <script type="text/javascript" src="myjquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <menu type = "context" id="menu">
+      <menuitem label="Larry's Blog" onClick="window.open('ladames335.tumblr.com');"></menuitem>
+      <menuitem label="Facebook" onClick="window.open('https://www.facebook.com');"></menuitem>
+      <menuitem label="Google+" onClick="window.open('https://www.plus.google.com');"></menuitem>
+      <menu label="Cool songs">
+        <menuitem label="11th Dimension" icon="ico_twitter.png"
+        onclick="window.open('https://www.youtube.com/watch?v=pl15PlIXHIk');">
+        </menuitem>
+        <menuitem label="Concrete Jungle" icon="ico_facebook.png"
+        onclick="window.open('https://www.youtube.com/watch?v=ZAYNXSv6wmw');">
+        </menuitem>
+  </menu>
+    </menu>
+  </head>
+
+  <body>
+    <div class ="header">
+      <h1>TurnToTech Front End Web Assignment</h1>
+      <h2>By: Larry Adames</h2>
+    </div>
+  
+    <div class="left"></div>
+  
+    <div class="assignment-content" id="content">
+      <div class="example">
+        <h2><span>&lt;rp&gt;</span></h2>
+        <p>The <strong><span>&lt;rp&gt;</span></strong> represents "ruby parentheses", an element used to wrap opening and closing parentheses around <strong><span>&lt;rt&gt;</span></strong> ruby text. These are for user agents that don't support ruby text, so that it makes sense when displayed inline. Browsers that support <strong><span>&lt;ruby&gt;</span></strong> hide <strong><span>&lt;rp&gt;</span></strong> via <strong><span>{display:none;}</span></strong></p>
+        <p style="{padding-top: 10px;}">
+          The <strong><span>&lt;rp&gt;</span></strong> is only used with <strong><span>&lt;rt&gt;</span></strong> tags within <strong><span>&lt;ruby&gt;</span></strong>. If the browser supports it, the example below will look as follows:
+          <figure><img src="http://html5doctor.com/wp-content/uploads/2010/05/gits-parentheses.png"><figcaption>The <strong><span>&lt;rp&gt;</span></strong> surrounds the annotations within the <strong><span>&lt;rt&gt;</span></strong>tags. The entire text is wrapped within a <strong><span>&lt;ruby&gt;</span></strong></figcaption></figure>
+
+        </p>
+      </div>
+      <!-- content -->
+      <div class="answer">
+      <p>
+       <ruby>攻殻<rp>（</rp><rt>こうかく</rt><rp>）</rp>機動隊<rp>（</rp><rt>きどうたい</rt><rp>）</rp></ruby></p>
+      </div>
+      
+      <a href="progress.html"><div class="back-button">Back</div></a>
+      <a href="time.html"><div class="next-button">Next</div></a>
+    </div>
+  </body>
+</html>

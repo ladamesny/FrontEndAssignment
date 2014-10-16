@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Front End Web Development Assignment</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link type ="text/css"rel="stylesheet" href="frontend.css">
+    <script type="text/javascript" src="myjquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class ="header">
+      <h1>TurnToTech Front End Web Assignment</h1>
+      <h2>By: Larry Adames</h2>
+    </div>
+  
+    <div class="left"></div>
+  
+    <div class="assignment-content" id="content">
+      <div class="example">
+        <h2><span>&lt;bdi&gt;</span> tag</h2>
+        <p><strong>&lt;bdi&gt;</strong> stands for <em>Bi-directional Isolation</em> and is used to isolate text-content that may need to be read from right to left, such as Arabic.</p>
+        <strong><em><p>In the example below, usernames are shown along with the number of points in an exam. If the <strong><span>&lt;bdi&gt;</span></strong> element is not supported by the browser, the username of the Arabic user would confuse the text(the bidirectional algorithm would put the colon and the number "6" next to the word "User" rather than next to the word "points").</p></em></strong>
+      </div>
+      
+      <ul>
+        <li>User <bdi>Suresh</bdi>: 8 points</li>
+        <li>User <bdi>Daniel</bdi>: 9 points</li>
+        <li>User <bdi>إيان</bdi>: 6 points</li>
+      </ul>
+      <a href="aside.html"><div class="back-button">Back</div></a>
+      <a href="details.html"><div class="next-button">Next</div></a>
+    </div>
+  </body>
+
+</html>

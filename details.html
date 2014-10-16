@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Front End Web Development Assignment</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link type ="text/css"rel="stylesheet" href="frontend.css">
+    <script type="text/javascript" src="myjquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class ="header">
+      <h1>TurnToTech Front End Web Assignment</h1>
+      <h2>By: Larry Adames</h2>
+    </div>
+  
+    <div class="left"></div>
+  
+    <div class="assignment-content" id="content">
+      <div class="example">
+        <h2><span>&lt;details&gt;</span> and <span>&lt;summary&gt;</span> </h2>
+        <p><strong><span>&lt;details&gt;</span></strong> is a disclosure widget included in HTML 5 that the user can obtain additional information or controls.We can use it to create an accordion-like widget without using javascript.</p>
+        <p style="{margin-top: 10px;}">A <strong><span>&lt;summary&gt;</span></strong> tag is used within the <strong><span>&lt;details&gt;</span> tag as the header of a section to be expanded.</p>
+        <strong> <em><p style="{margin-top: 10px;}">Below we're nesting <span>&lt;details&gt;</span> elements to toggle the view of a shoppping list and subsections, which we define with <span>&lt;summary&gt;</span>tags.</p></em></strong>
+      </div>
+      <details>
+        <summary>Shopping list</summary>
+        <details>
+          <summary >Produce</summary>
+            <p >Avocados</p>
+            <p >Bananas</p>
+        </details>
+        <details>
+          <summary >Dairy</summary>
+            <p >Milk</p>
+            <p >Eggs</p>
+        </details>
+        <details>
+          <summary >Other</summary>
+            <p >Honey</p>
+            <p >Coffee</p>
+            <p >Sancocho</p>
+        </details>
+      </details>
+      <a href="bdi.html"><div class="back-button">Back</div></a>
+      <a href="dialog.html"><div class="next-button">Next</div></a>
+    </div>
+  </body>
+
+</html>
