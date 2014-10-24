@@ -4,6 +4,10 @@ html, body, h1, h2, h3, p, ul, li, a{
   margin: 0;
   font-family: Verdana;
 }
+@font-face {
+  font-family:'nexa_rust_sansblack'; 
+  src:url("other/NexaRustSans-Black-Free-webfont.ttf");
+}
 div {
   border-radius: 5px;
 }
@@ -298,6 +302,30 @@ summary p{
   margin: 0 auto;
   border:2px solid black;
 }
-.syntaxhighlighter code{
-  
+
+#adder-1, #adder-2{
+  border: 2px solid black;
+  width:100px;
+  text-align: center;
+  margin-top: 10px;
+}
+.transform{
+  border:2px solid black;
+  background-color: white;
+  padding-bottom: 30px;
+}
+.transform img{
+  -webkit-transform: rotate(45deg);
+  width:50px;
+  height: auto;
+  padding-left: 50px;
+}
+
+.newspaper{
+  -webkit-column-count:3; 
+  -webkit-column-gap: 40px;
+  margin-top: 10px;
+}
+.web-font{
+  font-family: 'nexa_rust_sansblack';
 }

@@ -31,5 +31,34 @@ $(document).ready(function() {
     });
     
 
+    //Create two functions with the same name but different functionality. Put them in different namespaces
+    //so that they both can be used without conflict.
+
+    //First function - add two
+    function add_two(num){
+            num +=2;
+            console.log(num);
+        return num;
+    }
+
+    //Second function
+    //Create an object to act as separate namespace
+    var MYADD = {
+        //set instance of MYADD
+        append_two: function(word){
+            //setter function
+            this.new_word = word + " two";
+            //getter function
+            this.add_two = function(){
+                return this.new_word;
+            };
+        }
+    };
+
+    var result = add_two(5);
+    $("#adder-1").html(result);
+    var adder = new MYADD.append_two("five");
+    $("#adder-2").html(adder.add_two("five"));
+
 });
 
